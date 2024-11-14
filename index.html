@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Health Insurance Marketplace</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Marketplace</h1>
+    </header>
+    <main>
+      <h2>Your household</h2>
+      <p>Welcome to The Marketplace! Review your household below:</p>
+      <ol class="member-list">
+        <li>
+          <h3>Bud Baxter</h3>
+          <dl>
+            <div>
+              <dt>Description:</dt>
+              <dd>Household contact</dd>
+            </div>
+            <div>
+              <dt>Favorite fruit:</dt>
+              <dd>Apple</dd>
+            </div>
+          </dl>
+        </li>
+        <li>
+          <h3>Andy Baxter</h3>
+          <dl>
+            <div>
+              <dt>Description:</dt>
+              <dd>Household contact</dd>
+            </div>
+            <div>
+              <dt>Favorite fruit:</dt>
+              <dd>Apple</dd>
+            </div>
+          </dl>
+        </li>
+      </ol>
+      <form id="formAddMember" class="add-household-member" hidden>
+        <fieldset>
+          <legend>Add a household member</legend>
+          <label
+            ><span class="inner-label">Name:</span>
+            <input type="text" autocomplete="name" id="memberName" />
+          </label>
+          <label
+            ><span class="inner-label">Description:</span>
+            <input type="text" id="memberDescription" />
+          </label>
+          <label
+            ><span class="inner-label">Favorite fruit:</span>
+            <select id="memberFaveFruit">
+              <option value="Apple">Apple</option>
+              <option value="Banana">Banana</option>
+              <option value="Mango">Mango</option>
+              <option value="Orange">Orange</option>
+              <option value="Pineapple">Pineapple</option>
+            </select>
+          </label>
+        </fieldset>
+        <footer>
+          <button id="btnAddNewMember" class="btn-primary">Add member</button>
+          <button id="btnCancelNew" type="button" class="btn-secondary">
+            Cancel
+          </button>
+        </footer>
+      </form>
+      <button id="btnShowAddMemberForm" class="btn-primary">
+        Add new member
+      </button>
+    </main>
+  </body>
+</html>
