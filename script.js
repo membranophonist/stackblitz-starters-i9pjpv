@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     memberList.append(newItem);
 
-    async function create(member) {
+    async function create() {
       try {
         // Create the URL
         const url = 'https://63d006cc8a780ae6e681fea9.mockapi.io/api/members';
