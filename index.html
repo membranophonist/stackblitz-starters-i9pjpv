@@ -22,39 +22,18 @@
       <h2>Your household</h2>
       <p>Welcome to The Marketplace! Review your household below:</p>
       <ol class="member-list">
-        <li>
-          <h3>Bud Baxter</h3>
-          <dl>
-            <div>
-              <dt>Description:</dt>
-              <dd>Household contact</dd>
-            </div>
-            <div>
-              <dt>Favorite fruit:</dt>
-              <dd>Apple</dd>
-            </div>
-          </dl>
-        </li>
-        <li>
-          <h3>Andy Baxter</h3>
-          <dl>
-            <div>
-              <dt>Description:</dt>
-              <dd>Household contact</dd>
-            </div>
-            <div>
-              <dt>Favorite fruit:</dt>
-              <dd>Apple</dd>
-            </div>
-          </dl>
-        </li>
       </ol>
+      <img id="loadingIndicator" src="./loader.svg" alt="Loading" />
       <form id="formAddMember" class="add-household-member" hidden>
         <fieldset>
           <legend>Add a household member</legend>
           <label
-            ><span class="inner-label">Name:</span>
-            <input type="text" autocomplete="name" id="memberName" />
+            ><span class="inner-label">First Name:</span>
+            <input type="text" autocomplete="given-name" id="memberFirstName" />
+          </label>
+          <label
+            ><span class="inner-label">Last Name:</span>
+            <input type="text" autocomplete="family-name" id="memberLastName" />
           </label>
           <label
             ><span class="inner-label">Description:</span>
